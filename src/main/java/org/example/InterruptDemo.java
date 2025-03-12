@@ -21,16 +21,19 @@ public class InterruptDemo extends Thread {
 //           Thread.sleep(1000);
 //           System.out.println("Hello");
 //       } catch (InterruptedException e) {
-//           System.out.println(e);
+//           Thread.currentThread().interrupt();
+//           System.out.println(e.getMessage()  + " thread is interrupted");
 //       }
 //
 //    }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 //        InterruptDemo interruptDemo = new InterruptDemo();
 //        interruptDemo.start();
 //        interruptDemo.interrupt();
+//        Thread.sleep(1000);
+//        System.out.println(interruptDemo.isInterrupted());
 
         InterruptDemo t1 = new InterruptDemo();
         InterruptDemo t2 = new InterruptDemo();

@@ -5,7 +5,7 @@ public class DaemonThread  extends  Thread{
     @Override
     public void run() {
         while (true){
-            System.out.println("Hello World");
+            System.out.println(Thread.currentThread().getName());
         }
     }
 

@@ -41,7 +41,7 @@ public class ReadWriteLockDemo {
     public static void main(String[] args) {
 
         Runnable readTask = () -> {
-            for(int i = 0 ; i< 10; i++){
+            for(int i = 0 ; i< 10; i++) {
                 System.out.println(Thread.currentThread().getName() + " is reading " + getCount());
             }
         };

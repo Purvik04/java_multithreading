@@ -38,7 +38,7 @@ public class BankAccount {
                 }
             }
             else{
-                System.out.println("Could not get lock");
+                System.out.println(Thread.currentThread().getName() + " Could not get lock");
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
